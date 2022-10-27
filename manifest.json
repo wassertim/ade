@@ -1,0 +1,32 @@
+{
+    "name": "Ade",
+    "description": "Ade is a simple extension that removes ad blocks from search results",        
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*/*",
+                "http://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "icons": {
+        "16": "icons/icon16.png",
+        "32": "icons/icon32.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "src/*.js"
+            ],
+            "matches": ["<all_urls>"]
+        }
+    ]
+}

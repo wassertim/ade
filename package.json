@@ -1,0 +1,9 @@
+{  
+  "displayName": "Ade",
+  "description": "Ade is an chrome extension that removes the ads from the search results of Google.",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "jest",
+    "dist": "mkdir -p dist && git archive --format zip --output ./dist/$(git describe --tags --always).zip HEAD"
+  }
+}
